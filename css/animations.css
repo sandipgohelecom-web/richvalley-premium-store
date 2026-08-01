@@ -1,0 +1,25 @@
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.hero-card {
+  animation: floatCard 6s ease-in-out infinite;
+}
+
+.category-card img,
+.product-card img,
+.collection-card img {
+  transition: transform 0.4s ease;
+}
+
+.category-card:hover img,
+.product-card:hover img,
+.collection-card:hover img {
+  transform: scale(1.04);
+}
